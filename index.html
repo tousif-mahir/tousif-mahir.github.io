@@ -1,117 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tousif Portfolio</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-    </head>
-    <body class="bg-black text-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tousif Portfolio</title>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark border-bottom border-secondary">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Home</a>
-                <div class="d-flex gap-3">
-                    <a href="education.html"
-                        class="text-secondary text-decoration-none link-primary">Education</a>
-                    <a href="skills.html"
-                        class="text-secondary text-decoration-none link-primary">Skills</a>
-                    <a href="contact.html"
-                        class="text-secondary text-decoration-none link-primary">Contact</a>
-                </div>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Home</a>
+
+            <div class="d-flex gap-3">
+                <a href="education.html"
+                    class="text-secondary text-decoration-none link-primary">
+                    Education
+                </a>
+
+                <a href="skills.html"
+                    class="text-secondary text-decoration-none link-primary">
+                    Skills
+                </a>
+
+                <a href="contact.html"
+                    class="text-secondary text-decoration-none link-primary">
+                    Contact
+                </a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Hero -->
-        <section class="py-5 border-bottom border-secondary">
-            <div class="container">
-                <div class="row align-items-center g-5">
+    <!-- Hero -->
+    <section class="py-5 border-bottom border-secondary">
+        <div class="container">
+            <div class="row align-items-center g-5">
 
-                    <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center">
+                    <img
+                        src="Tousif.jpg"
+                        alt="Tousif"
+                        class="rounded-circle border border-3 border-primary object-fit-cover"
+                        width="220"
+                        height="220">
+                </div>
+
+                <div class="col-md-8">
+                    <p class="text-primary text-uppercase fw-semibold small mb-2">
+                        CSE Student · University of Rajshahi
+                    </p>
+
+                    <h1 class="display-4 fw-bold mb-3">
+                        Md. Tousif Al Mahir
+                    </h1>
+
+                    <p class="text-secondary mb-0">
+                        Hello! My name is Tousif Al Mahir.
+                        I am a student at the University of Rajshahi,
+                        studying in the Computer Science and Engineering
+                        (CSE) department.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-5 border-bottom border-secondary">
+        <div class="container">
+
+            <h6 class="text-primary text-uppercase fw-bold mb-4">
+                Projects
+            </h6>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Flappy Bird Card -->
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-dark border-secondary h-100">
+
                         <img
-                            src="Tousif.jpg"
-                            alt="Tousif"
-                            class="rounded-circle border border-3 border-primary object-fit-cover"
-                            width="220"
-                            height="220">
-                    </div>
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxYtqpL0TfXuH11QBByt0WKPGj0vzAEH7eA&s"
+                            alt="Flappy Bird"
+                            class="card-img-top object-fit-cover"
+                            style="height:160px">
 
-                    <div class="col-md-8">
-                        <p
-                            class="text-primary text-uppercase fw-semibold small mb-2">
-                            CSE Student · University of Rajshahi
-                        </p>
-                        <h1 class="display-4 fw-bold mb-3">
-                            Md. Tousif Al Mahir
-                        </h1>
-                        <p class="text-secondary mb-0">
-                            Hello! My name is Tousif Al Mahir.
-                            I am a student at the University of Rajshahi,
-                            studying in the Computer Science and Engineering
-                            (CSE) department.
-                        </p>
-                    </div>
+                        <div class="card-body d-flex flex-column">
 
-                </div>
-            </div>
-        </section>
+                            <h5 class="card-title fw-bold">
+                                Flappy Bird Project
+                            </h5>
 
-        <!-- Projects -->
-        <section class="py-5 border-bottom border-secondary">
-            <div class="container">
-                <h6
-                    class="text-primary text-uppercase fw-bold mb-4">Projects</h6>
+                            <p class="card-text text-secondary small flex-grow-1">
+                                A browser-based Flappy Bird clone built with
+                                HTML, CSS, and JavaScript.
+                                Tap or press Space to keep the bird flying
+                                through the pipes!
+                            </p>
 
-                <div class="row g-4 align-items-stretch">
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge border border-secondary text-light fw-normal">
+                                    HTML
+                                </span>
 
-                    <!-- Flappy Bird Card -->
-                    <div class="col-12 col-lg-4">
-                        <div class="card bg-dark border-secondary h-100">
+                                <span class="badge border border-secondary text-light fw-normal">
+                                    CSS
+                                </span>
 
-                            <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxYtqpL0TfXuH11QBByt0WKPGj0vzAEH7eA&s"
-                                alt="Flappy Bird"
-                                class="card-img-top object-fit-cover"
-                                style="height:160px">
-
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title fw-bold">Flappy Bird
-                                    Project</h5>
-                                <p
-                                    class="card-text text-secondary small flex-grow-1">
-                                    A browser-based Flappy Bird clone built with
-                                    HTML, CSS, and JavaScript.
-                                    Tap or press Space to keep the bird flying
-                                    through the pipes!
-                                </p>
-
-                                <div class="d-flex flex-wrap gap-1 mb-3">
-                                    <span
-                                        class="badge border border-secondary text-light fw-normal">HTML</span>
-                                    <span
-                                        class="badge border border-secondary text-light fw-normal">CSS</span>
-                                    <span
-                                        class="badge border border-secondary text-light fw-normal">JavaScript</span>
-                                </div>
-
-                                <a href="flappy-bird/index.html" target="_blank"
-                                    class="btn btn-primary w-100 fw-semibold">
-                                    ▶ Play Now
-                                </a>
+                                <span class="badge border border-secondary text-light fw-normal">
+                                    JavaScript
+                                </span>
                             </div>
+
+                            <a href="https://tousif-mahir.github.io/Flappy-Bird/"
+                                target="_blank"
+                                class="btn btn-primary w-100 fw-semibold">
+                                ▶ Play Now
+                            </a>
 
                         </div>
                     </div>
+                </div>
 
-                    <!-- Footer -->
-                    <footer class="text-center text-secondary py-4 small">
-                        © 2026 Md. Tousif Al Mahir · Using Bootstrap
-                    </footer>
+            </div>
+        </div>
+    </section>
 
-                    <script
-                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-                </body>
-            </html>
+    <!-- Footer -->
+    <footer class="text-center text-secondary py-4 small">
+        © 2026 Md. Tousif Al Mahir · Using Bootstrap
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
