@@ -1,346 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tousif's Portfolio Page</title>
+        <title>Tousif Portfolio</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
-            rel="stylesheet">
-        <style>
-        body {
-            background-color: #0a0a0a;
-            color: #e8e8e8;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.3rem;
-            letter-spacing: 0.05em;
-            color: #e8e8e8 !important;
-        }
-
-        /* Hero */
-        .hero-section {
-            padding: 80px 0 60px;
-            border-bottom: 1px solid #2a2a2a;
-        }
-
-        .profile-img-wrapper {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #5b6ef5;
-            box-shadow: 0 0 30px rgba(91, 110, 245, 0.35);
-            margin: 0 auto;
-        }
-
-        .profile-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-name {
-            font-size: 2.8rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-        }
-
-        .hero-subtitle {
-            color: #5b6ef5;
-            font-size: 1.1rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .hero-bio {
-            color: #999;
-            font-size: 1rem;
-            max-width: 480px;
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid #1e1e1e;
-        }
-
-        .section-label {
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: #5b6ef5;
-            margin-bottom: 28px;
-        }
-
-        /* Education table */
-        .edu-table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        .edu-table th {
-            background-color: #111;
-            color: #5b6ef5;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 14px 16px;
-            border: 1px solid #2a2a2a;
-            font-weight: 600;
-        }
-
-        .edu-table td {
-            padding: 14px 16px;
-            border: 1px solid #1e1e1e;
-            color: #ccc;
-            font-size: 0.95rem;
-            vertical-align: middle;
-        }
-
-        .edu-table tr:hover td {
-            background-color: #111;
-        }
-
-        .result-badge {
-            background-color: #5b6ef520;
-            color: #7f8ef7;
-            border: 1px solid #5b6ef540;
-            border-radius: 20px;
-            padding: 3px 12px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            display: inline-block;
-        }
-
-        /* Skills */
-        .skill-tag {
-            display: inline-block;
-            background-color: #141414;
-            border: 1px solid #2a2a2a;
-            color: #ccc;
-            border-radius: 6px;
-            padding: 8px 18px;
-            margin: 6px 4px;
-            font-size: 0.9rem;
-            transition: border-color 0.2s, color 0.2s;
-        }
-
-        .skill-tag:hover {
-            border-color: #5b6ef5;
-            color: #7f8ef7;
-        }
-
-        /* Contact */
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 14px 0;
-            border-bottom: 1px solid #1a1a1a;
-            color: #ccc;
-        }
-
-        .contact-item:last-child { border-bottom: none; }
-
-        .contact-label {
-            font-size: 0.72rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: #5b6ef5;
-            font-weight: 600;
-            min-width: 70px;
-        }
-
-        .contact-item a { color: #ccc; text-decoration: none; }
-        .contact-item a:hover { color: #7f8ef7; }
-
-        /* Social */
-        .social-link img {
-            width: 40px;
-            height: 40px;
-            opacity: 0.7;
-            transition: opacity 0.2s, transform 0.2s;
-        }
-
-        .social-link img:hover {
-            opacity: 1;
-            transform: translateY(-3px);
-        }
-
-        .github-logo { filter: invert(1); }
-
-        footer {
-            padding: 32px 0;
-            text-align: center;
-            color: #444;
-            font-size: 0.82rem;
-            letter-spacing: 0.05em;
-        }
-    </style>
     </head>
-    <body>
+    <body class="bg-black text-white">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-dark px-4 py-3"
-            style="background-color: #0a0a0a; border-bottom: 1px solid #1e1e1e;">
-            <span class="navbar-brand">Tousif</span>
-            <div class="d-flex gap-4">
-                <a href="#education" class="text-decoration-none"
-                    style="color:#888; font-size:0.9rem;">Education</a>
-                <a href="#skills" class="text-decoration-none"
-                    style="color:#888; font-size:0.9rem;">Skills</a>
-                <a href="#contact" class="text-decoration-none"
-                    style="color:#888; font-size:0.9rem;">Contact</a>
+        <nav class="navbar navbar-dark border-bottom border-secondary">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Home</a>
+                <div class="d-flex gap-3">
+                    <a href="education.html"
+                        class="text-secondary text-decoration-none link-primary">Education</a>
+                    <a href="skills.html"
+                        class="text-secondary text-decoration-none link-primary">Skills</a>
+                    <a href="contact.html"
+                        class="text-secondary text-decoration-none link-primary">Contact</a>
+                </div>
             </div>
         </nav>
 
         <!-- Hero -->
-        <section class="hero-section">
+        <section class="py-5 border-bottom border-secondary">
             <div class="container">
                 <div class="row align-items-center g-5">
-                    <div class="col-md-auto text-center">
-                        <div class="profile-img-wrapper">
-                            <img src="Tousif.jpg" alt="Md. Tousif Al Mahir">
-                        </div>
+
+                    <div class="col-md-4 text-center">
+                        <img
+                            src="Tousif.jpg"
+                            alt="Tousif"
+                            class="rounded-circle border border-3 border-primary object-fit-cover"
+                            width="220"
+                            height="220">
                     </div>
-                    <div class="col-md">
-                        <p class="hero-subtitle mb-2">CSE Student · University
-                            of Rajshahi</p>
-                        <h1 class="hero-name mb-3">Md. Tousif<br>Al Mahir</h1>
-                        <p class="hero-bio">
+
+                    <div class="col-md-8">
+                        <p
+                            class="text-primary text-uppercase fw-semibold small mb-2">
+                            CSE Student · University of Rajshahi
+                        </p>
+                        <h1 class="display-4 fw-bold mb-3">
+                            Md. Tousif Al Mahir
+                        </h1>
+                        <p class="text-secondary mb-0">
                             Hello! My name is Tousif Al Mahir.
                             I am a student at the University of Rajshahi,
-                            studying in the Computer Science and Engineering (CSE)
-                            department.
+                            studying in the Computer Science and Engineering
+                            (CSE) department.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Education -->
-        <section id="education">
+        <!-- Projects -->
+        <section class="py-5 border-bottom border-secondary">
             <div class="container">
-                <p class="section-label">Education</p>
-                <div class="table-responsive">
-                    <table class="edu-table">
-                        <thead>
-                            <tr>
-                                <th>Institution</th>
-                                <th>Degree</th>
-                                <th>Year</th>
-                                <th>Result</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>University of Rajshahi</td>
-                                <td>B.Sc. in CSE</td>
-                                <td>2024 – Present</td>
-                                <td><span class="result-badge">CGPA – X</span></td>
-                            </tr>
-                            <tr>
-                                <td>Bheramara Govt. College</td>
-                                <td>H.S.C in Science</td>
-                                <td>2021 – 2022</td>
-                                <td><span class="result-badge">GPA – 5.00</span></td>
-                            </tr>
-                            <tr>
-                                <td>Bheramara Govt. Model Pilot High School</td>
-                                <td>S.S.C in Science</td>
-                                <td>2019 – 2020</td>
-                                <td><span class="result-badge">GPA – 4.89</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+                <h6
+                    class="text-primary text-uppercase fw-bold mb-4">Projects</h6>
 
-        <!-- Skills -->
-        <section id="skills">
-            <div class="container">
-                <p class="section-label">Skills</p>
-                <div>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">C++</span>
-                </div>
-            </div>
-        </section>
+                <div class="row g-4 align-items-stretch">
 
-        <!-- Contact -->
-        <section id="contact">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-md-6">
-                        <p class="section-label">Contact</p>
-                        <div class="contact-item">
-                            <span class="contact-label">Email</span>
-                            <div>
-                                <a href="mailto:s2410476113@ru.ac.bd">s2410476113@ru.ac.bd</a><br>
-                                <a href="mailto:almahir457@gmail.com">almahir457@gmail.com</a>
+                    <!-- Flappy Bird Card -->
+                    <div class="col-12 col-lg-4">
+                        <div class="card bg-dark border-secondary h-100">
+
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxYtqpL0TfXuH11QBByt0WKPGj0vzAEH7eA&s"
+                                alt="Flappy Bird"
+                                class="card-img-top object-fit-cover"
+                                style="height:160px">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Flappy Bird
+                                    Project</h5>
+                                <p
+                                    class="card-text text-secondary small flex-grow-1">
+                                    A browser-based Flappy Bird clone built with
+                                    HTML, CSS, and JavaScript.
+                                    Tap or press Space to keep the bird flying
+                                    through the pipes!
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span
+                                        class="badge border border-secondary text-light fw-normal">HTML</span>
+                                    <span
+                                        class="badge border border-secondary text-light fw-normal">CSS</span>
+                                    <span
+                                        class="badge border border-secondary text-light fw-normal">JavaScript</span>
+                                </div>
+
+                                <a href="flappy-bird/index.html" target="_blank"
+                                    class="btn btn-primary w-100 fw-semibold">
+                                    ▶ Play Now
+                                </a>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Facebook</span>
-                            <span>Tousif Al Mahir</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Phone</span>
-                            <span>01516544980</span>
+
                         </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <p class="section-label">Social Links</p>
-                        <div class="d-flex gap-4 flex-wrap">
-                            <a href="https://www.facebook.com/tousif.almahir/"
-                                target="_blank" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                                    alt="Facebook">
-                            </a>
-                            <a href="https://www.instagram.com/tousif_al_mahir/"
-                                target="_blank" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                                    alt="Instagram">
-                            </a>
-                            <a href="https://www.linkedin.com/in/tousif-al-mahir-b22783351/"
-                                target="_blank" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                                    alt="LinkedIn">
-                            </a>
-                            <a href="https://github.com/tousif-mahir"
-                                target="_blank" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                    alt="GitHub" class="github-logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <!-- Footer -->
+                    <footer class="text-center text-secondary py-4 small">
+                        © 2026 Md. Tousif Al Mahir · Using Bootstrap
+                    </footer>
 
-        <footer>
-            © 2026 Md. Tousif Al Mahir · Built with Bootstrap 5
-        </footer>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                </body>
+            </html>
